@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://snap-tik-tau.vercel.app/sitemap.xml

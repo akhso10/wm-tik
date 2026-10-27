@@ -1,0 +1,28 @@
+PANDUAN GOOGLE SEARCH — SOCIALSAVER PRO
+
+Paket ini menggunakan URL publik:
+https://snap-tik-tau.vercel.app/
+
+ISI PAKET
+- index.html: metadata SEO dasar, canonical, Open Graph.
+- robots.txt: mengizinkan crawler dan menunjuk sitemap.
+- sitemap.xml: URL halaman utama.
+
+CARA MENGGUNAKAN
+1. Simpan cadangan proyek Vercel yang sekarang.
+2. Ganti index.html proyek dengan index.html dari paket ini, lalu letakkan robots.txt dan sitemap.xml di direktori publik/root yang sama dengan index.html.
+3. Deploy ulang melalui cara deploy proyek yang saat ini digunakan.
+4. Tes setelah deploy:
+   https://snap-tik-tau.vercel.app/robots.txt
+   https://snap-tik-tau.vercel.app/sitemap.xml
+5. Buka https://search.google.com/search-console/ dan tambah properti URL-prefix:
+   https://snap-tik-tau.vercel.app/
+6. Pilih metode verifikasi HTML tag. Salin tag unik yang diberikan Google ke dalam bagian <head> pada index.html, deploy ulang, lalu tekan Verify di Search Console.
+7. Setelah terverifikasi, buka URL Inspection, masukkan https://snap-tik-tau.vercel.app/, pilih Test Live URL, lalu Request Indexing.
+8. Buka menu Sitemaps dan kirim sitemap.xml.
+
+CATATAN
+- Tag verifikasi Google berbeda untuk setiap akun/properti; paket ini tidak menyertakan tag verifikasi.
+- Jika proyek Vercel menggunakan folder output/public khusus, pastikan robots.txt dan sitemap.xml masuk ke folder yang disajikan sebagai root publik.
+- Mengirim sitemap dan meminta indexing tidak menjamin halaman langsung masuk Google.
+- Pastikan situs dan fitur download bekerja dengan benar, dan hanya gunakan konten dengan izin serta sesuai ketentuan platform.
